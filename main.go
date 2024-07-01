@@ -49,7 +49,7 @@ func processPacket(packet []byte) {
 	case 4:
 		header, err := ipv4.ParseHeader(packet)
 		if err != nil {
-			fmt.Println("解析IPV6数据包错误", err)
+			fmt.Println("解析IPV4数据包错误", err)
 			return
 		}
 
